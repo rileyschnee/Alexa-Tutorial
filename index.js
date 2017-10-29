@@ -20,14 +20,14 @@ var handlers = {
     // This is your custom intent you define on the web interface.
   'SampleIntent': function() {
     this.emit(':tell', 'Hi, User!');
-	this.emit(':ask', 'Would you like me to do something else?')
+	  this.emit(':ask', 'Would you like me to do something else?')
   },
     // Amazon requires that Alexa skills be able to provide info to users about 
     // how to navigate and use the skill. Include that here. Be sure to include
     // an ':ask' with a question to prompt the user to respond.
   'AMAZON.HelpIntent': function () {    
     this.emit(':tell', 'Explain how to navigate the intent here.')
-	this.emit(':ask', 'Prompt')
+	  this.emit(':ask', 'Prompt')
   },
     // When the user says 'stop', do you want Alexa to say anything before canceling?
     // If so, include that here. If not, delete the line in this function.
