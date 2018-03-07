@@ -26,8 +26,7 @@ var handlers = {
     // how to navigate and use the skill. Include that here. Be sure to include
     // an ':ask' with a question to prompt the user to respond.
   'AMAZON.HelpIntent': function () {    
-    this.emit(':tell', 'Explain how to navigate the intent here.')
-	  this.emit(':ask', 'Prompt')
+	  this.emit(':ask', 'Explain how to navigate the intent here and then prompt user for input.')
   },
     // When the user says 'stop', do you want Alexa to say anything before canceling?
     // If so, include that here. If not, delete the line in this function.
@@ -36,7 +35,7 @@ var handlers = {
   },
     // When the user says 'cancel', do you want Alexa to say anything before canceling?
     // If so, include that here. If not, delete the line in this function. 
-  'AMAZON.Cancel': function () {
+  'AMAZON.CancelIntent': function () {
      this.emit(':tell', 'Goodbye!')
   },
     // If the user says something that hasn't been made understandable, 
